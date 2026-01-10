@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="EFCoreExperements.Core/EFCoreExperements.Core.csproj" Id="f86a9403-1d4d-4a48-9b4d-1f5ba94df180" />
+  <Project Path="EFCoreExperements.Filler/EFCoreExperements.Filler.csproj" />
+</Solution>
