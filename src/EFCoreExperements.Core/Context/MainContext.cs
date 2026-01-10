@@ -1,8 +1,5 @@
 ﻿using EFCoreExperements.Core.Entity;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace EFCoreExperements.Core.Context
 {
@@ -12,11 +9,12 @@ namespace EFCoreExperements.Core.Context
 
         public MainContext(DbContextOptions<MainContext> options) : base(options)
         {
+            Database.EnsureCreated();
         }
 
         public void CreateTables()
         {
-
+            Database.EnsureCreated();
         }
     }
 }

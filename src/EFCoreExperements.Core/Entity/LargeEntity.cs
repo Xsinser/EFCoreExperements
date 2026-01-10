@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace EFCoreExperements.Core.Entity
 {
@@ -15,9 +12,11 @@ namespace EFCoreExperements.Core.Entity
         [Column("int_value")]
         public int IntValue { get; set; }
 
+        [Column("string_25")]
         [StringLength(25)]
         public string String25 { get; set; }
 
+        [Column("string_100")]
         [StringLength(100)]
         public string String100 { get; set; }
     }
