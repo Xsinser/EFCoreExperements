@@ -8,7 +8,7 @@ var configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
     .Build();
 
-string connectionString = configuration["ConnectionStrings"];
+string connectionString = configuration["ConnectionStrings"] ?? throw new NullReferenceException("Empty required parameter ConnectionStrings");
 
 var optionsBuilder = new DbContextOptionsBuilder<MainContext>();
 optionsBuilder.UseNpgsql(connectionString);

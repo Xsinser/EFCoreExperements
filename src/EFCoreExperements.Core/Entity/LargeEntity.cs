@@ -14,10 +14,10 @@ namespace EFCoreExperements.Core.Entity
 
         [Column("string_25")]
         [StringLength(25)]
-        public string String25 { get; set; }
+        public required string String25 { get; set; }
 
         [Column("string_100")]
         [StringLength(100)]
-        public string String100 { get; set; }
+        public required string String100 { get; set; }
     }
 }
